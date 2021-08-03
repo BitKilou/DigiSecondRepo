@@ -1,0 +1,99 @@
+{
+  "kind": "dev",
+  "methods":
+  {
+    "approve(address,uint256)":
+    {
+      "details": "See {IERC721-approve}."
+    },
+    "awardItem(uint256,string,string)":
+    {
+      "details": "Firstly we require that the value sent is higher then the value asked by the seller then, using the _mint function from OZ lib we create the NFT and send it to the function caller. UpDate the ether balance of the buyerWe also want to be able to display in our front a few event, so we added this mintedNFT event",
+      "params":
+      {
+        "hash": "Identifier of the image of the NFT on IPFS",
+        "metadata": "Metdata Identifier of the NFT on IPFS",
+        "offerId": "We want to be able to track the offers created. "
+      },
+      "returns":
+      {
+        "_0": "We return the item's unique Id"
+      }
+    },
+    "balanceOf(address)":
+    {
+      "details": "See {IERC721-balanceOf}."
+    },
+    "getApproved(uint256)":
+    {
+      "details": "See {IERC721-getApproved}."
+    },
+    "getOfferId()":
+    {
+      "details": "for tests && front-end display"
+    },
+    "isApprovedForAll(address,address)":
+    {
+      "details": "See {IERC721-isApprovedForAll}."
+    },
+    "name()":
+    {
+      "details": "See {IERC721Metadata-name}."
+    },
+    "ownerOf(uint256)":
+    {
+      "details": "See {IERC721-ownerOf}."
+    },
+    "reimbursement(uint256)":
+    {
+      "details": "As in our previous function we use the OZ lib to back-up our contract We then require that the caller is the owner of the tokenId  then the balance of the caller is updated. the token is then burned(using OZ lib) then => proceed to the payment, the caller will receive his funds by calling the function Emitting this event will allow the front to send a confirmation/Fail messsage",
+      "params":
+      {
+        "tokenId": "We need to know the tokenId to proceed"
+      }
+    },
+    "safeTransferFrom(address,address,uint256)":
+    {
+      "details": "See {IERC721-safeTransferFrom}."
+    },
+    "safeTransferFrom(address,address,uint256,bytes)":
+    {
+      "details": "See {IERC721-safeTransferFrom}."
+    },
+    "setApprovalForAll(address,bool)":
+    {
+      "details": "See {IERC721-setApprovalForAll}."
+    },
+    "setPrice(uint256)":
+    {
+      "details": "We use the OZ lib to increment Id's in order to avoid overFlowsBy placing an event here, we will be able to display it on our front-end",
+      "params":
+      {
+        "price": "We then set the price to the following Id of the NFT"
+      }
+    },
+    "supportsInterface(bytes4)":
+    {
+      "details": "See {IERC165-supportsInterface}."
+    },
+    "symbol()":
+    {
+      "details": "See {IERC721Metadata-symbol}."
+    },
+    "tokenURI(uint256)":
+    {
+      "details": "See {IERC721Metadata-tokenURI}."
+    },
+    "transferFrom(address,address,uint256)":
+    {
+      "details": "We back this function using OZ ERC721 lib using the lib, we require that the token owner is the caller of this function We then proceed to the transfer By emitting these events we are able to display a msg in our front Finally, we reset the balances of the owner and the receiver.",
+      "params":
+      {
+        "from": "The msg.sender",
+        "to": "The receiver ",
+        "tokenId": "We make sure that the tokenID is inputed as a param by the caller to avoid problems"
+      }
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "user",
+  "methods":
+  {
+    "awardItem(uint256,string,string)":
+    {
+      "notice": "Minting and attributing the NFT to the buyer."
+    },
+    "getOfferId()":
+    {
+      "notice": "these are our getter functions"
+    },
+    "reimbursement(uint256)":
+    {
+      "notice": "This function is our \"pay\" function, indeed we decided to go with a pull over push function Firstly for security reasons, it also allows the user that purchased  the NFT to call this function and to get reimbursed, so everybody win's :)"
+    },
+    "setPrice(uint256)":
+    {
+      "notice": "Sets the price of the NFT, inputed by the seller."
+    },
+    "transferFrom(address,address,uint256)":
+    {
+      "notice": "This function is used to transfer NFTs, this function  will be used to send to the seller, or send the NFT as a gift "
+    }
+  },
+  "version": 1
+}

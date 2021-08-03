@@ -1,0 +1,32 @@
+.title-offer {
+    text-align: center;
+    color: midnightblue;
+}
+
+.grid {
+    margin-top: 150px;
+}
+
+.meta-btn {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.Price-Eth {
+    position: absolute;
+    left: 50px;
+    margin-top: 100px;
+    border:  2px solid midnightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+}
+
+.logo-crea {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 1000px;
+}

@@ -1,0 +1,60 @@
+.Team {
+    width: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.titleTeam {
+    color: midnightblue;
+}
+
+.background {
+    width: 400px;
+    height: 550px;
+    margin-left: 530px;
+}
+
+.wholeTeam {
+    position: relative;
+    display: flex;
+}
+
+.Teo {
+  position: absolute;
+  margin-top:60px;
+  margin-left:200px;
+  text-align: center;
+}
+
+.Alain {
+    position: absolute;
+    margin-top:  300px;
+    margin-left: 200px;
+    text-align: center;
+}
+
+.Nico {
+    position: absolute;
+    margin-top:60px;
+    margin-left: 1100px;
+    text-align: center;
+}
+
+.Kilian {
+    position: absolute;
+    margin-top:  300px;
+    margin-left: 1100px;
+    text-align: center;
+}
+
+.copyright {
+    height: 18px;
+    position:absolute;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    bottom: -16px;
+    width: 100%;
+    padding-top: 2px;
+    background: linear-gradient(45deg, rgb(93, 91, 199), rgb(55, 55, 201));
+}

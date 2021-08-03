@@ -1,0 +1,71 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@chakra-ui/icons": "^1.0.14",
+    "@chakra-ui/react": "^1.6.5",
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "@fontsource/inter": "^4.5.0",
+    "@material-ui/core": "^4.12.1",
+    "@material-ui/icons": "^4.11.2",
+    "@metamask/jazzicon": "^2.0.0",
+    "@nomiclabs/buidler-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@openzeppelin/contracts": "^4.2.0",
+    "@openzeppelin/test-environment": "^0.1.9",
+    "@openzeppelin/test-helpers": "^0.5.12",
+    "@truffle/hdwallet-provider": "^1.4.2",
+    "@uniswap/v3-periphery": "^1.1.1",
+    "@uniswap/v3-sdk": "^3.2.1",
+    "@usedapp/core": "^0.4.1",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.2",
+    "chai": "^4.3.4",
+    "coingecko-api-v3": "0.0.12",
+    "ethers": "^4.0.49",
+    "framer-motion": "^4.1.17",
+    "hardhat": "^2.5.0",
+    "identicon": "^3.0.1",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.6.1",
+    "react-dom": "^16.12.0",
+    "react-particles-js": "^3.5.3",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.2.0",
+    "solc": "^0.4.26",
+    "solidity-docgen": "^0.5.13",
+    "typescript": "^4.3.5",
+    "use-wallet": "^0.9.0",
+    "web3modal": "^1.9.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@nomiclabs/buidler": "^1.4.8",
+    "@nomiclabs/buidler-waffle": "^2.1.0",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "ethereum-waffle": "^3.4.0",
+    "web3": "^1.2.2"
+  }
+}

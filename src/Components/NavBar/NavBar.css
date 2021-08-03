@@ -1,0 +1,39 @@
+.logo {
+    position: absolute;
+    height: auto;
+    left: 230px;
+}
+
+.grp-btn {
+    position: absolute;
+    left: 470px;
+}
+
+@media screen and (max-width: 500px) {
+    
+    .list {
+        flex-direction: column;
+        height: 200px;
+    }
+
+    .items:nth-child(1)  {
+        border-top: 1px solid #fff;
+        margin-top: 50px;
+    }
+
+    .items {
+        height: 50px;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+        line-height: 50px;
+    }
+
+    .btn {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: #333;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,8 @@
+.MuiFormControl-root.MuiTextField-root {
+    width: 80%;
+}
+
+.MuiPaper-root.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded {
+    min-width: 300px;
+    text-align: center;
+}
