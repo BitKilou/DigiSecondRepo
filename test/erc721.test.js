@@ -84,7 +84,8 @@ contract('ERC721', (accounts) => {
     })
 
     it('sends a mintedNFT event', async function () {
-      const tokenId = await erc721Instance.getTokenId()
+      // should have the token Id in the event !!!
+      // const tokenId = await erc721Instance.getTokenId()
 
       expectEvent(await erc721Instance.awardItem(0, imageHash, metadataHash, {from: owner, value: 2}), 'mintedNFT', {Buyer: owner, Hash: imageHash, Metadata: metadataHash, IdOfOffer: new BN(0), value: new BN(2)})
     })
