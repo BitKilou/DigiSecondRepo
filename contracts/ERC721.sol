@@ -50,13 +50,12 @@ contract TokenERC721 is ERC721URIStorage {
       * @param hash Identifier of the image of the NFT on IPFS
       * @param metadata Metdata Identifier of the NFT on IPFS
       * @dev We also want to be able to display in our front a few event, so we added this mintedNFT event
-      * @return We return the item's unique Id
       */
 
-    function awardItem(uint256 offerId, string memory hash, string memory metadata) public payable returns (uint256) {
-        require(msg.value >= prices[offerId], "Send the minimum amount required");  
+    function awardItem(uint256 offerId, string memory hash, string memory metadata) public payable {
+        require(msg.value >= prices[offerId], "Send the minimum amount required");
         // require(hashes[hash] != 1); // not available yet, need PDF implementation in nodejs
-        hashes[hash] = 1;
+        // hashes[hash] = 1;
 
         uint256 newItemId = _tokenIds.current();
 
@@ -69,8 +68,6 @@ contract TokenERC721 is ERC721URIStorage {
         emit mintedNFT(msg.sender, hash, metadata, offerId, msg.value);
 
         _tokenIds.increment();
-        
-        return newItemId;
     }
 
     /** @notice This function is used to transfer NFTs, this function 
@@ -127,12 +124,20 @@ contract TokenERC721 is ERC721URIStorage {
         return _offerIds.current();
     }
 
+    function getPrice(uint256 offerId) public view returns(uint256) {
+        return prices[offerId];
+    }
+
     function getTokenId() public view returns(uint256) {
         return _tokenIds.current();
     }
 
     function getEthBalance(address _address) public view returns(uint256) {
         return ethBalance[_address];
+    }
+
+    function getTokenPrice(uint256 tokenId) public view returns(uint256) {
+        return tokenPrice[tokenId];
     }
 
     function balanceContract() view public returns (uint256) {
